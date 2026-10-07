@@ -1,0 +1,1 @@
+Install BepInEx 5 (64-bit) into your SkateBIRD folder, then copy the SigfMix folder from the release into BepInEx/plugins and start the game. The race begins by itself on the playground: drive through rainbow boxes for items, and press E to use one early.

@@ -1,0 +1,7 @@
+Clip moments (ticked only when seen in preview screenshots):
+[x] 1. Start grid: the bird's skateboard is now a red go-kart beside three rival karts under the Cloud Marshal gantry; lamps count 3-2-1-GO and the karts launch.
+[x] 2. The bird drives through a rainbow item box, the item slot spins and shows an item (shell / banana / turbo / star).
+[x] 3. A shell or banana hits a rival kart: it spins out with stars, its health bar drops, the bird screams (the host game scores a "Screm").
+[x] 4. A rival is knocked out in an explosion (K.O. title) with wheels flying off.
+[x] 5. The bird kickflips on the track (host game trick) and the kart gets TRICK TURBO flames and speed.
+Weak: the game camera sometimes sits very close behind the bird, and rivals are sometimes out of frame when they get hit.
