@@ -1,0 +1,193 @@
+{
+  "id": "sigf/skatebird-kart-game-takeover",
+  "version": "1.0.0",
+  "name": "Kart Game Takeover",
+  "tagline": "Bring Kart Game into the game in the most visible and funny way. The change shows in the first 30 seconds of play.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "skatebird",
+      "role": "host",
+      "engine": "SkateBIRD (itch build, Unity 2019.4.20f1 Mono, 64-bit, game exe SkateBIRD.exe) + BepInEx 5.4.23.2 x64 C# plugin (net472)"
+    },
+    {
+      "game": "kartgame",
+      "role": "guest",
+      "label": "Kart Game"
+    }
+  ],
+  "requires": [
+    {
+      "id": "bepinex"
+    }
+  ],
+  "install": [
+    {
+      "game": "skatebird",
+      "strategy": "profile",
+      "files": [
+        {
+          "src": "skatebird-kart-game-takeover.zip",
+          "dst": "{game}",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/beep.wav",
+              "sha256": "396414027e00871963bded3c489ee026438fcca8824a1796349b3587b5828a47"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/boom.wav",
+              "sha256": "79f1ac68037fa1e5d39faa63e47e49592a480ad034c0bb1e91267e0d6d6acfdf"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/boost.wav",
+              "sha256": "c9065afaf37bce9bb288f4c55f2d1523cbe0c5126029d2d70c054ee517c81326"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/coin.wav",
+              "sha256": "5750f47fc8f42b86d2d5eaa825e42e5b2f8b847cb054fa3abda7bd2b5df84d55"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/engine.wav",
+              "sha256": "1f16c616e24bf7a90a10fb6e1f9b6c241edf80bcb36f769336f36762495ce7cc"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/fanfare.wav",
+              "sha256": "53e0af9f53ac20807ff1a4521131c8dad978fc370ede3d9fb01b071916bb0d84"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/go.wav",
+              "sha256": "999c81f98912024be52261ba3dc7794fb39254f920f953283afb8ea33cd209fe"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/horn.wav",
+              "sha256": "470c1fea608a966ddf435f592876174f0f7ce0b3cc694fd4a92aba0d558cfc05"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/itembox.wav",
+              "sha256": "c6649fb0bc1667ee7b6651da7f433a538e436e8f6051aa1a8358869e7eaed0a7"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/music.wav",
+              "sha256": "17a04fdd838e5ac0134c2bc6d57db3e3a7cf4f44edb25f094cff521367abbead"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/shell.wav",
+              "sha256": "450ab25be565e95c67edcedb4e53be4185ba35cb72d34a119679225c07e4712f"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/snd/spin.wav",
+              "sha256": "1506da96cbe3cb3d5878e4f21d49d08489e9184a55a89ae820adb2d2f52200e7"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/boostpad.png",
+              "sha256": "40bc89a99d871f44395b8beed6b28037b5eaf9800230705486a904158ec47a99"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/checker.png",
+              "sha256": "1e5bfa34919f890121c302262a5a2ba1a2bcb83b1b6d1192b47d7fc9ed80827d"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/coin.png",
+              "sha256": "5fdb000d2847473d4bbc2e8c1739878264b197054a4a7ec3a752b0845b41d13f"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/icon_banana.png",
+              "sha256": "e589102105cc2588a79184d1ee19a083592647194ede15f30ffbd689bc9da097"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/icon_shell.png",
+              "sha256": "079bb4ab3bc2675e96ca11fd547dfb39210bef4c522fb4a252dc823171b46c0f"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/icon_star.png",
+              "sha256": "30a57d4cd7d0d552b237a5df043084824bd1713a7a9763b0b1f5db2049da95ad"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/icon_turbo.png",
+              "sha256": "70a8d6253fd0654cc74272d973493a074713ad4f0052f4fb6079df481b6ce057"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/itembox.png",
+              "sha256": "65404712a2df7cc490a422c8d6220d20db3d25a66c0e456c17456d3a0fd95ceb"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/kart_blue.png",
+              "sha256": "2e0c23801e76241c276b4817b707b1b29f5bbef24f2f18f765e74a05ec05cf5c"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/kart_green.png",
+              "sha256": "87a7e841da88e048db1e45275139da00c99fbd7018f2a06fd63e836061318411"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/kart_red.png",
+              "sha256": "bfd630f843a9e40598c3a8a94c550cf58ecd5d402ab8f63055bcb37580527139"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/kart_yellow.png",
+              "sha256": "09e1c0bf39484c0e57dd63315351d66876d5fff05b96c4ab22a6aeca2038aaba"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/rainbow.png",
+              "sha256": "0dee1020a103059d48879c0d29cbfd6e1f7030ecd2be477bdc6d1a79b12483b6"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/shell.png",
+              "sha256": "e6e754f3c5c637484a283f4a2602fe7b09b225874a63c65bd09d8185e5ba523d"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/assets/tex/tire.png",
+              "sha256": "1d07383d2e28503b9695f2ff34af35c223c7bb0f55cc945bf06fd649c2f85355"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/SigfMix.dll",
+              "sha256": "13ae256513201021231f26d19307bbe3bc5f5ec602394aa6373f139c89cb9d1f"
+            },
+            {
+              "path": "BepInEx/plugins/SigfMix/SigfMix.pdb",
+              "sha256": "f05b55a6db1db5d4f709354d449203dbcefea14caed075ffdf3fb3652a3a41ff"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/skatebird-kart-game-takeover/releases/download/v1.0.0/skatebird-kart-game-takeover.zip",
+          "sha256": "4c30a7ea6886983d4cac31e8d190bbebe609cbdd7c8ee497d548da4bd3fd1e2e",
+          "size": 10935403
+        }
+      ],
+      "loader": "bepinex"
+    }
+  ],
+  "launch": [
+    {
+      "game": "skatebird",
+      "args": []
+    }
+  ],
+  "files": [
+    {
+      "name": "skatebird-kart-game-takeover.zip",
+      "url": "https://github.com/SIGFAI/skatebird-kart-game-takeover/releases/download/v1.0.0/skatebird-kart-game-takeover.zip",
+      "sha256": "4c30a7ea6886983d4cac31e8d190bbebe609cbdd7c8ee497d548da4bd3fd1e2e",
+      "size": 10935403
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/skatebird-kart-game-takeover",
+    "license": "MIT"
+  },
+  "media": {
+    "clip": "https://sigf.ai/clips/2026-10-07-a9e7f670.mp4"
+  },
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "skatebird",
+    "status": "draft"
+  },
+  "built_at": "2026-10-07T11:39:50.093Z",
+  "notes": [
+    "Install BepInEx 5 (64-bit) into your SkateBIRD folder, then copy the SigfMix folder from the release into BepInEx/plugins and start the game. The race begins by itself on the playground: drive through rainbow boxes for items, and press E to use one early."
+  ]
+}
